@@ -40,7 +40,7 @@ app.get('/', function (req, res) {
 
 app.get('/port', function (req, res) {
     res.writeHead(200, { 'content-type': 'text/html' });
-    res.write('Port: ' + JSON.stringify(process));
+    res.write('Port: ' + JSON.stringify(process.env));
     res.end();
 });
 
